@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <title>Tip Calculator</title>
+</head>
+<body>
+    <form>
+        <label for="bill-total">Bill total</label>
+        <br>
+        <input type="text" id="bill-total" placeholder="$0.00" onkeyup="calculateBill()">
+        <br>
+        <label for="tip">Tip</label>
+        <br>
+        <input type="text" id="tip" placeholder="%10" onkeyup="calculateBill()">
+    </form>
+
+    <div class="btn-total">
+        <button id="add-btn" onclick="addBtn()">+</button>
+        <p id="people-no">1</p>
+        <button id="sub-btn" onclick="subBtn()">-</button>
+        <p>Total per Person</p>
+        <p id="per-person-total"></p>
+    </div>
+    
+
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
